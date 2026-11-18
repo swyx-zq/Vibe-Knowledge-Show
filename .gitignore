@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+
+# Build and render output
+out/
+dist/
+build/
+
+# Generated Remotion/public assets
+public/sfx/
+
+# Caches and temporary files
+.remotion/
+.cache/
+coverage/
+*.log
+*.tmp
+*.temp
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# macOS metadata
+.DS_Store
+.AppleDouble
+.LSOverride

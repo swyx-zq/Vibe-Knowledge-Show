@@ -1,0 +1,30 @@
+{
+  "name": "renzhi",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "sfx": "node scripts/认知觉醒/make-sfx.mjs && node scripts/认知觉醒/make-sfx-s1.mjs && node scripts/认知觉醒/make-sfx-s2.mjs && node scripts/认知觉醒/make-sfx-s3.mjs && node scripts/认知觉醒/make-sfx-s4.mjs && node scripts/认知觉醒/make-sfx-s5.mjs && node scripts/认知觉醒/make-sfx-s6.mjs && node scripts/认知觉醒/make-sfx-s7.mjs && node scripts/认知觉醒/make-sfx-s8.mjs",
+    "studio": "npm run sfx && remotion studio src/认知觉醒/index.ts",
+    "render": "npm run sfx && remotion render src/认知觉醒/index.ts Main out/认知觉醒/main.mp4",
+    "render:s0": "npm run sfx && npx -y node@22 ./node_modules/.bin/remotion render src/认知觉醒/index.ts Scene0 out/认知觉醒/scene0.mp4 --overwrite",
+    "render:s1": "npm run sfx && npx -y node@22 ./node_modules/.bin/remotion render src/认知觉醒/index.ts Scene1 out/认知觉醒/scene1.mp4 --overwrite",
+    "render:s2": "npm run sfx && npx -y node@22 ./node_modules/.bin/remotion render src/认知觉醒/index.ts Scene2 out/认知觉醒/scene2.mp4 --overwrite",
+    "render:s3": "npm run sfx && npx -y node@22 ./node_modules/.bin/remotion render src/认知觉醒/index.ts Scene3 out/认知觉醒/scene3.mp4 --overwrite",
+    "render:s4": "npm run sfx && npx -y node@22 ./node_modules/.bin/remotion render src/认知觉醒/index.ts Scene4 out/认知觉醒/scene4.mp4 --overwrite",
+    "render:s5": "npm run sfx && npx -y node@22 ./node_modules/.bin/remotion render src/认知觉醒/index.ts Scene5 out/认知觉醒/scene5.mp4 --overwrite",
+    "render:s6": "npm run sfx && npx -y node@22 ./node_modules/.bin/remotion render src/认知觉醒/index.ts Scene6 out/认知觉醒/scene6.mp4 --overwrite",
+    "render:s7": "npm run sfx && npx -y node@22 ./node_modules/.bin/remotion render src/认知觉醒/index.ts Scene7 out/认知觉醒/scene7.mp4 --overwrite",
+    "render:s8": "npm run sfx && npx -y node@22 ./node_modules/.bin/remotion render src/认知觉醒/index.ts Scene8 out/认知觉醒/scene8.mp4 --overwrite",
+    "render:s9": "npm run sfx && npx -y node@22 ./node_modules/.bin/remotion render src/认知觉醒/index.ts Scene9 out/认知觉醒/scene9.mp4 --overwrite"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.544",
+    "@remotion/google-fonts": "^4.0.544",
+    "@remotion/studio": "4.0.544",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "remotion": "^4.0.544"
+  }
+}
