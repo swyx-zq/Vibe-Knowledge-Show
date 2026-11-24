@@ -15,6 +15,8 @@ import {LightLeak} from '@remotion/light-leaks';
 import {Starburst} from '@remotion/starburst';
 import {C, FONT} from '../认知觉醒/theme';
 
+///
+
 export const SCENEKIT_DURATION = 300; // 10s
 
 const clamp = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'} as const;
