@@ -10,6 +10,7 @@ import {Scene6, SCENE6_DURATION} from './认知觉醒/Scene6';
 import {Scene7, SCENE7_DURATION} from './认知觉醒/Scene7';
 import {Scene8, SCENE8_DURATION} from './认知觉醒/Scene8';
 import {Scene9, SCENE9_DURATION} from './认知觉醒/Scene9';
+import SceneKit, {SCENEKIT_DURATION} from './动画组件库/SceneKit';
 
 const SCENES = [
 	{id: 'Scene0', C: Scene0, d: SCENE0_DURATION}, // 开场
@@ -44,5 +45,7 @@ export const RemotionRoot: React.FC = () => (
 		{SCENES.map(({id, C, d}) => (
 			<Composition key={id} id={id} component={C} durationInFrames={d} {...common} />
 		))}
+		{/* 官方动画组件实机验证（不属于正片，单独渲染用） */}
+		<Composition id="AnimationKit" component={SceneKit} durationInFrames={SCENEKIT_DURATION} {...common} />
 	</>
 );
